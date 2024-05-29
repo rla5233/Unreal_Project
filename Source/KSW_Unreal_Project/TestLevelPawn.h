@@ -30,6 +30,12 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintCallable, Category = "Move Action Function")
+	void MoveF();
+
+	UFUNCTION(BlueprintCallable, Category = "Move Action Function")
+	void MoveB();
+
 	// unreal defaultpawn
 	// 	   
 		// Begin Pawn overrides

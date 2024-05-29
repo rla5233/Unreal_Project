@@ -93,6 +93,15 @@ void ATestLevelPawn::Tick(float DeltaTime)
 
 }
 
+void ATestLevelPawn::MoveF()
+{
+	AddActorLocalOffset(FVector(1.0f, 0.0f, 0.0f));
+}
+
+void ATestLevelPawn::MoveB()
+{
+	AddActorLocalOffset(FVector(-1.0f, 0.0f, 0.0f));
+}
 
 UPawnMovementComponent* ATestLevelPawn::GetMovementComponent() const
 {
